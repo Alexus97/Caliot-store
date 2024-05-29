@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+root: {
+    --white: hsl(0, 0%, 98%));
+
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* oculto lo que queda fuera de el container
+    contain: paint;*/
+}
+
+/* ==> section container-items <==*/
+.container__items {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 3fr));
+    gap: 30px;
+    width: 100%;
+    transition: .3s;
+    border: 1px solid #666;
+
+}
+
+.img__item {
+
+    widht: 100%;
+    height: 250px;
+    
+}
